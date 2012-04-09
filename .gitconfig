@@ -1,0 +1,40 @@
+[core]
+	autocrlf = input
+	safecrlf = true
+	excludesfile = /Users/chrismaddox/.gitignore_global
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+[user]
+	name = Chris Maddox
+	email = tyre77@gmail.com
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[apply]
+  whitespace = fix
+[push]
+  default = tracking
+[github]
+	user = tyre
+	token = f89b80f938605a881a944ac3cad4a378
